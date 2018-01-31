@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            .string {
+                background: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+
+            function highlight(strings, ...value) {
+                let str = '';
+                strings.forEach((string, i) => {
+                    str += (`<span contenteditable class="string">${strings[i]}</span>` || ``) + (value[i] || ``);
+                });
+                return str;
+            }
+
+            const name = "Aidan";
+            const detail = "awesome";
+            const age = 25;
+
+            var sentence = highlight`My name is ${name}, and I am ${detail} because I am almost ${age}`;
+
+            document.body.innerHTML = sentence;
+
+        </script>
+    </body>
+</html>

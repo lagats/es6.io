@@ -60,12 +60,16 @@
     </div>
   </div>
 
+  <!-- test -->
+
   <script>
+
     const box = document.querySelector('.box');
     box.addEventListener('click', function() {
       let first = 'opening';
       let second = 'open';
 
+      // swap value of variable
       if(this.classList.contains(first)) {
         [first, second] = [second, first];
       }
@@ -76,6 +80,7 @@
         this.classList.toggle(second);
       }, 500);
     });
+
   </script>
 
 </body>
