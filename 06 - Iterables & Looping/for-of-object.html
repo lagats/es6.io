@@ -5,6 +5,11 @@
   <title>Iterables & Looping</title>
 </head>
 <body>
+  <p>test2</p>
+  <p>test3</p>
+  <p>test4</p>
+  <p>test5</p>
+  <p>test6</p>
 
 <script>
   const apple = {
@@ -14,7 +19,7 @@
     sugar: 10
   };
 
-  for (const prop in apple) {
+  for (const prop of Object.entries(apple)) {
     const value = apple[prop];
     console.log(value, prop);
   }

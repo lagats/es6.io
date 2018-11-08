@@ -30,7 +30,10 @@
   <h2 class="jump">SPREADS!</h2>
 
 <script>
-  
+  //mysolution
+  document.querySelectorAll('.jump').forEach(node=>{
+    node.innerHTML = [...node.textContent].map(letter=>`<span>${letter}</span>`).join('');
+  });
 </script>
 </body>
 </html>
